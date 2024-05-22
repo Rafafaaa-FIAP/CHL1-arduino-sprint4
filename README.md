@@ -46,10 +46,10 @@ Este projeto utilizou as seguintes tecnologias e ferramentas:
 <table>
   <tr>
     <td>
-      <img src="https://github.com/Rafafaaa-FIAP/CHL01-arduino-sprint4/blob/main/images/circuit-1.jpg" alt="circuit 1" width="300" />
+      <img src="https://github.com/Rafafaaa-FIAP/CHL01-arduino-sprint4/blob/main/circuit-1.jpg" alt="circuit 1" width="300" />
     </td>
     <td>
-      <img src="https://github.com/Rafafaaa-FIAP/CHL01-arduino-sprint4/blob/main/images/circuit-2.jpg" alt="circuit 2" width="300" />
+      <img src="https://github.com/Rafafaaa-FIAP/CHL01-arduino-sprint4/blob/main/circuit-2.jpg" alt="circuit 2" width="300" />
     </td>
 </table>
    

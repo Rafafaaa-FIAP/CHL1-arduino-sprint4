@@ -1,0 +1,183 @@
+[
+    {
+        "id": "bb4c756179db76fc",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dbe48fa501981787",
+        "type": "json",
+        "z": "bb4c756179db76fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 310,
+        "y": 320,
+        "wires": [
+            [
+                "86524bb28e6fab62",
+                "0cc99609c7e86805",
+                "79870a558a731fe5",
+                "abfb33fa5cbacb23"
+            ]
+        ]
+    },
+    {
+        "id": "86524bb28e6fab62",
+        "type": "debug",
+        "z": "bb4c756179db76fc",
+        "name": "Luminosidade",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "58ab9b94ad1ed446",
+        "type": "mqtt out",
+        "z": "bb4c756179db76fc",
+        "name": "",
+        "topic": "tago/data/post",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e9eb6a8576d4dc4f",
+        "x": 740,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "0cc99609c7e86805",
+        "type": "function",
+        "z": "bb4c756179db76fc",
+        "name": "function",
+        "func": "var obj = {\n    payload: [{\n        \"variable\": \"Temperatura\",\n        \"unit\": \"°C\",\n        \"value\": msg.payload.temperature.toString()\n    }, {\n        \"variable\": \"Claridade\",\n        \"unit\": \"lx\",\n        \"value\": msg.payload.luminosity.toString()\n    },{\n        \"variable\": \"Umidade\",\n        \"unit\": \"%\",\n        \"value\": msg.payload.humidity.toString()\n    },{\n        \"variable\": \"Chamado\",\n        \"value\": msg.payload.chamado.toString()\n    }]\n};\n\n\nreturn obj;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 380,
+        "wires": [
+            [
+                "58ab9b94ad1ed446"
+            ]
+        ]
+    },
+    {
+        "id": "5b8cc0b4a8d055df",
+        "type": "serial in",
+        "z": "bb4c756179db76fc",
+        "name": "",
+        "serial": "73881f6687812bc2",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "dbe48fa501981787"
+            ]
+        ]
+    },
+    {
+        "id": "79870a558a731fe5",
+        "type": "debug",
+        "z": "bb4c756179db76fc",
+        "name": "Temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "abfb33fa5cbacb23",
+        "type": "debug",
+        "z": "bb4c756179db76fc",
+        "name": "Umidade",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e9eb6a8576d4dc4f",
+        "type": "mqtt-broker",
+        "name": "Tago_IO",
+        "broker": "mqtt.tago.io",
+        "port": "1883",
+        "clientid": "Danillo_mqtt",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "73881f6687812bc2",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM5",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    }
+]

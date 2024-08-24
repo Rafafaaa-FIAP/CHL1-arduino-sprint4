@@ -1,4 +1,4 @@
-<h1 align="center">Challenge 1 - Arduino - Sprint 4</h1>
+<h1 align="center">Challenge 1 - Sprint 4 - Arduino</h1>
 
 <hr/>
 
@@ -46,22 +46,22 @@ Este projeto utilizou as seguintes tecnologias e ferramentas:
 <table>
   <tr>
     <td>
-      <img src="https://github.com/Rafafaaa-FIAP/CHL1-arduino-sprint4/blob/main/circuit-1.jpg" alt="circuit 1" width="300" />
+      <img src="https://github.com/Rafafaaa-FIAP/CHL1-sprint4-arduino/blob/main/circuit-1.jpg" alt="circuit 1" width="300" />
     </td>
     <td>
-      <img src="https://github.com/Rafafaaa-FIAP/CHL1-arduino-sprint4/blob/main/circuit-2.jpg" alt="circuit 2" width="300" />
+      <img src="https://github.com/Rafafaaa-FIAP/CHL1-sprint4-arduino/blob/main/circuit-2.jpg" alt="circuit 2" width="300" />
     </td>
 </table>
    
 
 
 ### Fluxo
-<img src="https://github.com/Rafafaaa-FIAP/CHL1-arduino-sprint4/blob/main/flow.jpg" width="500" />
-<h6>Acesse o JSON para importação no Node-RED clicando <a href="https://github.com/Rafafaaa-FIAP/CHL1-arduino-sprint4/blob/main/flows.json">aqui</a>.</h6>
+<img src="https://github.com/Rafafaaa-FIAP/CHL1-sprint4-arduino/blob/main/flow.jpg" width="500" />
+<h6>Acesse o JSON para importação no Node-RED clicando <a href="https://github.com/Rafafaaa-FIAP/CHL1-sprint4-arduino/blob/main/flows.json">aqui</a>.</h6>
 
 ### Dashboard no TagoIO
-<a href="https://github.com/Rafafaaa-FIAP/CHL1-arduino-sprint4/blob/main/dashboard.jpg" target="blank">
-  <img src="https://github.com/Rafafaaa-FIAP/CHL1-arduino-sprint4/blob/main/dashboard.jpg" alt="dashboard" width="500" />
+<a href="https://github.com/Rafafaaa-FIAP/CHL1-sprint4-arduino/blob/main/dashboard.jpg" target="blank">
+  <img src="https://github.com/Rafafaaa-FIAP/CHL1-sprint4-arduino/blob/main/dashboard.jpg" alt="dashboard" width="500" />
 </a>
 <h6>Acesse o vídeo de demonstração do funcionamento clicando <a href="https://youtu.be/4yUfXOrdVzQ">aqui</a>.</h6>
 
@@ -69,7 +69,7 @@ Este projeto utilizou as seguintes tecnologias e ferramentas:
 ## :gear: Como Utilizar
 
 1. Instalar o Node-RED;
-2. Baixar o [código](https://github.com/Rafafaaa-FIAP/CHL1-arduino-sprint4/blob/main/code.ino) da solução e instalar as bibliotecas ArduinoJson e DHT sensor library;
+2. Baixar o [código](https://github.com/Rafafaaa-FIAP/CHL1-sprint4-arduino/blob/main/code.ino) da solução e instalar as bibliotecas ArduinoJson e DHT sensor library;
 3. Montar o circuito;
 4. Conectar o Arduino no computador e fazer upload do código para o Arduino;
 5. Iniciar o Node-RED no computador;
